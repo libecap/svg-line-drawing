@@ -1,0 +1,98 @@
+.text {
+  top: 10%;
+  left: 10%;
+  z-index: 10;
+  color: #fff;
+  font-family: "Unica One", sans-serif;
+  opacity: 0;
+  animation: blur-title .2s 1.2s ease-in forwards;
+  max-width: 20em;
+}
+
+#narwhal-eye {
+  opacity: 0;
+  animation: blur-title .2s 1.2s ease-in forwards;
+}
+
+@keyframes blur-title {
+
+  0% {
+    opacity: 0;
+    filter: blur(12px);
+  }
+
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+
+}
+
+#narwhal-body {
+  stroke-dasharray: 2500px; /* The length of the stroke */
+  stroke-dashoffset: 2500px; /* The length of the stroke */
+  animation: lines 1s linear forwards;
+}
+
+@keyframes lines {
+  from {
+    stroke-dashoffset: 2500px;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+#rainbow-violet {
+  stroke-dasharray: 2500px; /* The length of the stroke */
+  stroke-dashoffset: 2500px; /* The length of the stroke */
+  animation: rainbow 3s .5s linear forwards;
+}
+
+#rainbow-indigo {
+  stroke-dasharray: 2496px; /* The length of the stroke */
+  stroke-dashoffset: 2496px; /* The length of the stroke */
+  animation: rainbow 3s .5s linear forwards;
+}
+
+#rainbow-blue {
+  stroke-dasharray: 2500px; /* The length of the stroke */
+  stroke-dashoffset: 2500px; /* The length of the stroke */
+  animation: rainbow 3s .5s linear forwards;
+}
+
+#rainbow-green {
+  stroke-dasharray: 2500px; /* The length of the stroke */
+  stroke-dashoffset: 2500px; /* The length of the stroke */
+  animation: rainbow 3s .5s linear forwards;
+}
+
+#rainbow-yellow {
+  stroke-dasharray: 2500px; /* The length of the stroke */
+  stroke-dashoffset: 2500px; /* The length of the stroke */
+  animation: rainbow 3s .5s linear forwards;
+}
+
+#rainbow-orange {
+  stroke-dasharray: 2500px; /* The length of the stroke */
+  stroke-dashoffset: 2500px; /* The length of the stroke */
+  animation: rainbow 3s .5s linear forwards;
+}
+
+#rainbow-red {
+  stroke-dasharray: 2500px; /* The length of the stroke */
+  stroke-dashoffset: 2500px; /* The length of the stroke */
+  animation: rainbow 3s .5s linear forwards;
+}
+
+
+@keyframes rainbow {
+  from {
+    stroke-dashoffset: 2700px;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Plus a @keyframes set that animates `stroke-dashoffset` back to `0` */
