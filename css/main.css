@@ -35,12 +35,15 @@
 }
 
 @keyframes lines {
+
   from {
     stroke-dashoffset: 2500px;
   }
+
   to {
     stroke-dashoffset: 0;
   }
+
 }
 
 #rainbow-violet {
@@ -87,12 +90,13 @@
 
 
 @keyframes rainbow {
+
   from {
     stroke-dashoffset: 2700px;
   }
+
   to {
     stroke-dashoffset: 0;
   }
-}
 
-/* Plus a @keyframes set that animates `stroke-dashoffset` back to `0` */
+}
